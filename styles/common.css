@@ -626,7 +626,7 @@ nav>a:hover,
 /* Shared header: scale proportionally for browser 50% view on large desktops */
 @media (min-width: 2200px) and (max-width: 3200px) {
     header {
-        padding: 18px 0 20px;
+        padding: 20px 0 22px;
     }
 
     header .container {
@@ -635,94 +635,98 @@ nav>a:hover,
     }
 
     .header-content {
-        min-height: 76px;
+        min-height: 86px;
     }
 
     .logo-img {
-        width: 112px;
+        width: 126px;
     }
 
     nav {
-        gap: clamp(96px, 5vw, 152px);
+        gap: clamp(112px, 5.6vw, 176px);
     }
 
     nav > a,
     .story-trigger,
     .real-estate-trigger,
     .hospitality-trigger {
-        font-size: 24px;
+        font-size: 28px;
     }
 
     .btn-outline {
-        font-size: 21px;
-        padding: 14px 34px;
-        border-radius: 18px;
+        font-size: 24px;
+        padding: 16px 40px;
+        border-radius: 20px;
         border-width: 2px;
     }
 
     .story-dropdown {
-        min-height: 430px;
-        padding-top: 26px;
+        min-height: 500px;
+        padding-top: 34px;
     }
 
     .story-dropdown a {
-        font-size: 24px;
-        margin-bottom: 20px;
+        font-size: 30px;
+        margin-bottom: 24px;
+        line-height: 1.08;
     }
 
     .real-estate-dropdown {
-        min-height: 460px;
-        padding-top: 24px;
+        min-height: 560px;
+        padding-top: 32px;
     }
 
     .real-estate-panel {
-        grid-template-columns: 220px minmax(0, 1fr);
-        gap: 52px;
+        grid-template-columns: 260px minmax(0, 1fr);
+        gap: 64px;
         margin-right: 92px;
         width: calc(100vw - var(--real-estate-panel-left) - 92px);
     }
 
     .real-estate-status-col {
-        gap: 18px;
-        min-width: 220px;
-        padding-top: 4px;
+        gap: 24px;
+        min-width: 260px;
+        padding-top: 6px;
     }
 
     .real-estate-status-btn {
-        font-size: 24px;
+        font-size: 30px;
+        line-height: 1.06;
     }
 
     .real-estate-groups {
-        gap: 56px;
-        padding-top: 4px;
+        gap: 68px;
+        padding-top: 8px;
     }
 
     .real-estate-group h5,
     .real-estate-group-link {
-        margin-bottom: 16px;
-        font-size: 24px;
+        margin-bottom: 20px;
+        font-size: 30px;
+        line-height: 1.05;
     }
 
     .real-estate-group li {
-        margin-bottom: 14px;
+        margin-bottom: 18px;
     }
 
     .real-estate-group li a {
-        font-size: 23px;
+        font-size: 28px;
+        line-height: 1.1;
     }
 
     .real-estate-view-all {
-        margin-top: 16px;
-        gap: 14px;
+        margin-top: 20px;
+        gap: 18px;
         border-top-width: 3px;
-        padding-top: 14px;
-        min-width: 228px;
-        font-size: 23px;
+        padding-top: 18px;
+        min-width: 290px;
+        font-size: 28px;
     }
 
     .hospitality-dropdown {
-        min-height: 430px;
-        padding-top: 24px;
+        min-height: 500px;
+        padding-top: 32px;
     }
 
     .hospitality-panel {
@@ -730,7 +734,8 @@ nav>a:hover,
     }
 
     .hospitality-item {
-        font-size: 24px;
+        font-size: 30px;
+        line-height: 1.06;
     }
 }
 
@@ -2515,6 +2520,255 @@ nav>a:hover,
 
     .re-residential-grid .re-mini-size span {
         font-size: 8px;
+    }
+}
+
+@media (max-width: 640px) {
+    .real-estate-page-main {
+        padding-top: 36px;
+    }
+
+    .re-completed-head {
+        margin-top: 10px;
+        gap: 12px;
+    }
+
+    .re-completed-title-wrap {
+        gap: 6px;
+    }
+
+    .re-completed-head h2 {
+        font-size: 24px;
+        line-height: 1.02;
+    }
+
+    .re-completed-subtitle {
+        font-size: 13px;
+        line-height: 1.3;
+    }
+
+    .re-city-switcher {
+        width: 100%;
+        gap: 8px;
+    }
+
+    .re-city-btn {
+        flex: 1 1 0;
+        min-height: 38px;
+        font-size: 14px;
+        padding: 8px 10px;
+        text-align: center;
+    }
+
+    .re-city-panel .re-category-block:first-child {
+        margin-top: 24px;
+    }
+
+    .re-city-panel .re-category-block + .re-category-block {
+        margin-top: 18px;
+    }
+
+    .re-category-block {
+        padding-bottom: 22px;
+    }
+
+    .re-city-panel .re-category-block:last-child {
+        padding-bottom: 46px;
+    }
+
+    .re-banner {
+        min-height: 146px;
+    }
+
+    .re-banner h3 {
+        margin-left: 14px;
+        margin-bottom: 10px;
+        font-size: clamp(19px, 5.7vw, 24px);
+        line-height: 0.98;
+    }
+
+    .re-category-content {
+        padding-top: 22px;
+    }
+
+    .re-city-panel .re-category-block:first-child .re-category-content h4,
+    .re-city-panel .re-category-block:nth-child(2) .re-category-content h4,
+    .re-city-panel .re-category-block:nth-child(3) .re-category-content h4 {
+        font-size: 16px;
+    }
+
+    .re-city-panel .re-category-block:first-child .re-category-content > p,
+    .re-city-panel .re-category-block:nth-child(2) .re-category-content > p,
+    .re-city-panel .re-category-block:nth-child(3) .re-category-content > p {
+        font-size: 13px;
+        line-height: 1.5;
+        margin-bottom: 22px;
+    }
+
+    .re-residential-grid,
+    .re-mixed-grid,
+    .re-city-panel[data-city-panel="pune"] .re-residential-grid-pune {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    .re-residential-grid .re-mini-card,
+    .re-mixed-grid .re-mini-card {
+        border: 1px solid #e2e2e2;
+        border-radius: 14px;
+        background: #ffffff;
+        padding: 14px 12px 12px;
+    }
+
+    .re-residential-grid .re-mini-card h5,
+    .re-mixed-grid .re-mini-card h5 {
+        font-size: clamp(28px, 8.2vw, 34px);
+        line-height: 0.96;
+        min-height: auto;
+        margin-bottom: 8px;
+    }
+
+    .re-residential-grid .re-mini-card p,
+    .re-residential-grid .re-mini-type,
+    .re-residential-grid .re-mini-year,
+    .re-residential-grid .re-mini-loc,
+    .re-mixed-grid .re-mini-card .re-mixed-type,
+    .re-mixed-grid .re-mini-card .re-mixed-year,
+    .re-mixed-grid .re-mini-card .re-mixed-location {
+        font-size: 13px;
+        line-height: 1.32;
+    }
+
+    .re-residential-grid .re-mini-loc::before,
+    .re-residential-grid .re-mini-card p:last-of-type::before {
+        width: 14px;
+        height: 14px;
+        flex: 0 0 14px;
+    }
+
+    .re-residential-grid .re-mini-size,
+    .re-city-panel[data-city-panel="pune"] .re-residential-grid-pune .re-mini-size {
+        max-width: none;
+        width: fit-content;
+        min-width: 138px;
+        min-height: 34px;
+        padding: 0 10px;
+        font-size: 19px;
+        border-radius: 4px;
+    }
+
+    .re-residential-grid .re-mini-size span {
+        font-size: 9px;
+        line-height: 1.08;
+        padding-bottom: 1px;
+    }
+
+    .re-mixed-top {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .re-mixed-grid .re-mini-card .re-mixed-bhk {
+        min-width: 74px;
+        font-size: 12px;
+        padding: 2px 8px;
+    }
+
+    .re-mixed-grid .re-mini-card .re-mixed-shop {
+        width: fit-content;
+        min-width: 124px;
+    }
+
+    .re-mixed-grid .re-mini-card .re-mixed-location img {
+        width: 14px;
+        height: 14px;
+    }
+
+    .re-commercial-list {
+        gap: 12px;
+    }
+
+    .re-commercial-row {
+        grid-template-columns: 1fr;
+        gap: 6px;
+        border: 1px solid #e2e2e2;
+        border-radius: 14px;
+        background: #ffffff;
+        padding: 14px 12px 12px;
+    }
+
+    .re-commercial-row > *:not(:last-child)::after {
+        content: none;
+    }
+
+    .re-commercial-row h5 {
+        font-size: clamp(28px, 8vw, 34px);
+        line-height: 1;
+        left: 0;
+        margin-bottom: 4px;
+    }
+
+    .re-commercial-row p {
+        font-size: 13px;
+        line-height: 1.3;
+    }
+
+    .re-commercial-location .location-icon {
+        width: 14px;
+        height: 14px;
+    }
+}
+
+@media (max-width: 430px) {
+    .real-estate-page-main {
+        padding-top: 30px;
+    }
+
+    .re-page-title {
+        font-size: 24px;
+    }
+
+    .re-page-subtitle {
+        font-size: 11px;
+        margin-bottom: 18px;
+    }
+
+    .re-banner {
+        min-height: 132px;
+    }
+
+    .re-banner h3 {
+        margin-left: 12px;
+        margin-bottom: 9px;
+        font-size: clamp(17px, 5.5vw, 20px);
+    }
+
+    .re-residential-grid .re-mini-card,
+    .re-mixed-grid .re-mini-card,
+    .re-commercial-row {
+        padding: 12px 10px 10px;
+    }
+
+    .re-residential-grid .re-mini-card h5,
+    .re-mixed-grid .re-mini-card h5,
+    .re-commercial-row h5 {
+        font-size: clamp(24px, 7.8vw, 30px);
+    }
+
+    .re-residential-grid .re-mini-card p,
+    .re-residential-grid .re-mini-type,
+    .re-residential-grid .re-mini-year,
+    .re-residential-grid .re-mini-loc,
+    .re-mixed-grid .re-mini-card .re-mixed-type,
+    .re-mixed-grid .re-mini-card .re-mixed-year,
+    .re-mixed-grid .re-mini-card .re-mixed-location,
+    .re-commercial-row p {
+        font-size: 12px;
+    }
+
+    .re-city-btn {
+        font-size: 13px;
+        min-height: 36px;
     }
 }
 
@@ -5037,6 +5291,21 @@ body.hospitality-template p {
         order: initial;
     }
 
+    .hospitality-venue-copy,
+    .hospitality-venue.is-reverse .hospitality-venue-copy {
+        text-align: left;
+        justify-self: stretch;
+    }
+
+    .hospitality-venue.is-reverse .hospitality-venue-copy p {
+        margin-left: 0;
+    }
+
+    .hospitality-venue-meta,
+    .hospitality-venue.is-reverse .hospitality-venue-meta {
+        align-items: flex-start;
+    }
+
     .hospitality-venue-image-wrap img {
         height: 260px;
     }
@@ -5095,6 +5364,218 @@ body.hospitality-template p {
     .hospitality-cafe-copy {
         max-width: none;
         justify-self: start;
+    }
+}
+
+@media (max-width: 640px) {
+    .hospitality-hero-copy {
+        padding: 38px 14px 28px;
+    }
+
+    .hospitality-hero-copy h1 {
+        font-size: clamp(34px, 11vw, 46px);
+        line-height: 0.94;
+        margin-bottom: 10px;
+    }
+
+    .hospitality-hero-line-two {
+        margin-left: 54px;
+    }
+
+    .hospitality-hero-copy p {
+        font-size: clamp(18px, 5.2vw, 24px);
+        line-height: 1.03;
+    }
+
+    .hospitality-enrise-logo {
+        width: 92px;
+        margin-top: 30px;
+    }
+
+    .hospitality-hero-media img,
+    .hospitality-banner {
+        height: 240px;
+        object-position: center;
+    }
+
+    .hospitality-celebration {
+        padding-top: 70px;
+        padding-bottom: 76px;
+    }
+
+    .hospitality-center-head {
+        margin-bottom: 34px;
+    }
+
+    .hospitality-center-head h2 {
+        font-size: clamp(34px, 9.6vw, 44px);
+        line-height: 0.94;
+    }
+
+    .hospitality-center-head p {
+        font-size: clamp(16px, 4.7vw, 20px);
+    }
+
+    .hospitality-venues {
+        gap: 44px;
+    }
+
+    .hospitality-venue {
+        gap: 16px;
+    }
+
+    .hospitality-venue-image-wrap img {
+        height: 230px;
+    }
+
+    .hospitality-venue-copy h3 {
+        font-size: clamp(38px, 10.2vw, 48px);
+        margin-bottom: 10px;
+    }
+
+    .hospitality-venue-copy p {
+        font-size: 14px;
+        line-height: 1.58;
+        margin-bottom: 18px;
+    }
+
+    .hospitality-venue-meta {
+        font-size: 11px;
+        gap: 3px;
+    }
+
+    .hospitality-culinary {
+        --hospitality-tile-height: 210px;
+        padding-top: 42px;
+    }
+
+    .hospitality-center-head-culinary {
+        margin-bottom: 26px;
+    }
+
+    .hospitality-horizon-row {
+        gap: 16px;
+        margin-top: 18px;
+    }
+
+    .hospitality-horizon-copy,
+    .hospitality-cafe-copy {
+        font-size: 14px;
+        line-height: 1.62;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .hospitality-horizon-copy p + p {
+        margin-top: 12px;
+    }
+
+    .hospitality-horizon-title {
+        font-size: clamp(44px, 12vw, 58px);
+    }
+
+    .hospitality-cafe {
+        padding-top: 36px;
+        padding-bottom: 50px;
+    }
+
+    .hospitality-cafe-title {
+        font-size: clamp(42px, 11.2vw, 56px);
+        line-height: 0.95;
+        min-height: 130px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .hospitality-collage-image img,
+    .hospitality-cafe-main-image img,
+    .hospitality-cafe-bottom-image img {
+        height: 200px;
+    }
+
+    .hospitality-collage-word,
+    .hospitality-cafe-bottom-word {
+        font-size: clamp(86px, 22vw, 116px);
+        min-height: 112px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hospitality-section {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .hospitality-center-head-culinary {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .hospitality-hero-copy {
+        padding: 32px 10px 24px;
+    }
+
+    .hospitality-hero-copy h1 {
+        font-size: clamp(30px, 10.5vw, 40px);
+    }
+
+    .hospitality-hero-line-two {
+        margin-left: 44px;
+    }
+
+    .hospitality-hero-copy p {
+        font-size: 18px;
+    }
+
+    .hospitality-enrise-logo {
+        width: 82px;
+        margin-top: 24px;
+    }
+
+    .hospitality-hero-media img,
+    .hospitality-banner {
+        height: 210px;
+    }
+
+    .hospitality-center-head h2 {
+        font-size: clamp(30px, 9vw, 38px);
+    }
+
+    .hospitality-center-head p {
+        font-size: 16px;
+    }
+
+    .hospitality-venue-image-wrap img {
+        height: 204px;
+    }
+
+    .hospitality-venue-copy h3 {
+        font-size: clamp(34px, 9.6vw, 42px);
+    }
+
+    .hospitality-venue-copy p {
+        font-size: 13px;
+    }
+
+    .hospitality-venue-meta {
+        font-size: 10px;
+    }
+
+    .hospitality-horizon-copy,
+    .hospitality-cafe-copy,
+    .hospitality-cafe-title {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .hospitality-cafe-title {
+        font-size: clamp(36px, 10.4vw, 46px);
+    }
+
+    .hospitality-collage-word,
+    .hospitality-cafe-bottom-word {
+        font-size: clamp(72px, 20vw, 96px);
+        min-height: 96px;
     }
 }
 
@@ -5291,7 +5772,3 @@ body.hospitality-template p {
         transition-duration: 0.01ms !important;
     }
 }
-    .re-completed-head {
-        margin-top: 34px;
-        padding-bottom: 26px;
-    }

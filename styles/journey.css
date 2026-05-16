@@ -356,6 +356,78 @@ body.journey-template {
 
 /* ---------- RESPONSIVE ---------- */
 
+@media (min-width: 941px) and (max-width: 1599px) {
+    body.journey-template {
+        --journey-wheel-size: clamp(720px, 58vw, 900px);
+        --journey-wheel-left: clamp(-330px, -24vw, -250px);
+        --journey-wheel-top: clamp(-126px, -8vw, -94px);
+        --journey-wheel-year-size: clamp(36px, 2.8vw, 48px);
+        --journey-milestone-left: clamp(108px, 10vw, 176px);
+        --journey-brand-size: clamp(74px, 4.8vw, 98px);
+        --journey-row-gap: 12px;
+        --journey-year-slot: 0px;
+        --journey-copy-left: clamp(480px, 46vw, 660px);
+    }
+
+    .journey-hero {
+        height: clamp(600px, 52vw, 760px);
+        min-height: 600px;
+    }
+
+    .journey-hero-content h1 {
+        top: clamp(32px, 3.6vw, 48px);
+        right: clamp(84px, 13vw, 210px);
+        font-size: clamp(86px, 8vw, 130px);
+    }
+
+    .journey-milestone-row {
+        top: clamp(214px, 24vw, 286px);
+    }
+
+    .journey-projects {
+        gap: 20px;
+        max-width: min(700px, calc(100vw - var(--journey-copy-left) - 34px));
+    }
+
+    .journey-project {
+        min-width: 176px;
+        max-width: 292px;
+        min-height: 68px;
+        padding-left: 12px;
+    }
+
+    .journey-project::before {
+        height: 68px;
+    }
+
+    .journey-project h3 {
+        font-size: clamp(24px, 2.15vw, 34px);
+    }
+
+    .journey-project .type {
+        font-size: 13px;
+    }
+
+    .journey-project .location {
+        font-size: 11px;
+    }
+
+    .journey-copy {
+        top: clamp(392px, 40vw, 476px);
+        width: min(500px, calc(100vw - var(--journey-copy-left) - 34px));
+    }
+
+    .journey-copy h2 {
+        font-size: clamp(26px, 2.4vw, 34px);
+    }
+
+    .journey-copy p {
+        font-size: clamp(15px, 1.35vw, 18px);
+        line-height: 1.5;
+        max-width: 480px;
+    }
+}
+
 @media (min-width: 2200px) and (max-width: 3200px) {
     body.journey-template {
         --journey-wheel-size: clamp(1450px, 54vw, 1620px);
@@ -470,8 +542,8 @@ body.journey-template {
     }
 
     .journey-hero {
-        height: clamp(580px, 86vw, 700px);
-        min-height: 580px;
+        height: clamp(680px, 102vw, 860px);
+        min-height: 680px;
     }
 
     .journey-arc {
@@ -480,17 +552,17 @@ body.journey-template {
     }
 
     .journey-hero-content {
-        padding: 0 16px;
+        padding: 0 18px;
     }
 
     .journey-hero-content h1 {
-        top: clamp(22px, 3.6vw, 36px);
-        right: clamp(12px, 6vw, 64px);
-        font-size: clamp(66px, 10.2vw, 92px);
+        top: clamp(28px, 4.4vw, 46px);
+        right: clamp(14px, 6vw, 64px);
+        font-size: clamp(74px, 11vw, 106px);
     }
 
     .journey-milestone-row {
-        top: clamp(204px, 33vw, 250px);
+        top: clamp(236px, 36vw, 310px);
     }
 
     .journey-year {
@@ -499,131 +571,174 @@ body.journey-template {
     }
 
     .journey-projects {
-        gap: 12px;
-        max-width: min(500px, calc(100vw - var(--journey-copy-left) - 22px));
+        gap: 14px;
+        max-width: min(560px, calc(100vw - var(--journey-copy-left) - 24px));
     }
 
     .journey-project {
-        min-width: 150px;
-        max-width: 230px;
-        padding-left: 10px;
+        min-width: 170px;
+        max-width: 280px;
+        padding-left: 12px;
+        min-height: 64px;
+    }
+
+    .journey-project::before {
+        height: 64px;
     }
 
     .journey-project h3 {
-        font-size: clamp(19px, 2.3vw, 26px);
+        font-size: clamp(22px, 2.7vw, 30px);
+    }
+
+    .journey-project .type {
+        font-size: 13px;
+    }
+
+    .journey-project .location {
+        font-size: 11px;
     }
 
     .journey-copy {
         left: var(--journey-copy-left);
-        width: min(420px, calc(100vw - var(--journey-copy-left) - 22px));
+        width: min(500px, calc(100vw - var(--journey-copy-left) - 24px));
     }
 
     .journey-copy h2 {
-        font-size: clamp(24px, 3.5vw, 34px);
+        font-size: clamp(27px, 3.8vw, 38px);
     }
 
     .journey-copy p {
-        font-size: clamp(14px, 1.85vw, 17px);
-        line-height: 1.46;
+        font-size: clamp(15px, 2vw, 19px);
+        line-height: 1.52;
     }
 }
 
 @media (max-width: 640px) {
     body.journey-template {
-        --journey-wheel-size: clamp(520px, 108vw, 600px);
-        --journey-wheel-left: clamp(-458px, -92vw, -382px);
-        --journey-wheel-top: clamp(-322px, -56vw, -272px);
-        --journey-wheel-year-size: clamp(26px, 5.6vw, 34px);
-        --journey-milestone-left: clamp(28px, 6vw, 52px);
-        --journey-brand-size: 52px;
-        --journey-row-gap: 8px;
+        --journey-wheel-size: clamp(460px, 98vw, 540px);
+        --journey-wheel-left: clamp(-338px, -74vw, -286px);
+        --journey-wheel-top: clamp(-208px, -42vw, -166px);
+        --journey-wheel-year-size: clamp(24px, 5.6vw, 30px);
+        --journey-milestone-left: 0px;
+        --journey-brand-size: 64px;
+        --journey-row-gap: 10px;
         --journey-year-slot: 0px;
-        --journey-copy-left: 208px;
+        --journey-copy-left: 0px;
     }
 
     .journey-hero {
-        height: clamp(560px, 122vw, 680px);
-        min-height: 560px;
-        padding-bottom: 0;
+        height: auto;
+        min-height: 620px;
+        padding-bottom: 20px;
     }
 
     .journey-hero-content {
-        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0 14px 30px;
     }
 
     .journey-arc {
-        opacity: 0.7;
+        opacity: 0.72;
+        pointer-events: auto;
+        touch-action: pan-y;
+    }
+
+    .journey-arc .y.is-near {
+        opacity: 0.42;
+    }
+
+    .journey-arc .y.is-far {
+        opacity: 0.18;
     }
 
     .journey-hero-content h1 {
-        position: absolute;
-        top: 18px;
-        right: 8px;
-        font-size: clamp(46px, 11.8vw, 62px);
+        position: relative;
+        top: auto;
+        right: auto;
+        align-self: flex-end;
+        margin-top: 20px;
         margin-bottom: 0;
+        font-size: clamp(52px, 13vw, 68px);
     }
 
     .journey-milestone-row {
-        top: clamp(180px, 39vw, 238px);
-        flex-direction: row;
-        align-items: center;
-        gap: 8px;
-        margin-left: 0;
+        position: relative;
+        top: auto;
+        left: auto;
+        margin-top: clamp(154px, 33vw, 196px);
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 12px;
+        margin-left: auto;
+        width: clamp(238px, 64vw, 360px);
+        z-index: 8;
     }
 
     .journey-year {
         min-width: var(--journey-year-slot);
-        font-size: 24px;
+        font-size: 30px;
     }
 
     .journey-projects {
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: 1fr;
+        flex-direction: initial;
         flex-wrap: wrap;
-        gap: 8px;
-        margin-left: var(--journey-projects-offset);
-        max-width: min(280px, calc(100vw - var(--journey-copy-left) - 12px));
+        gap: 10px;
+        margin-left: 0;
+        max-width: 100%;
+        width: 100%;
+        grid-column: auto;
     }
 
     .journey-project {
-        width: auto;
-        min-width: 120px;
-        max-width: 180px;
-        min-height: 54px;
-        padding-left: 8px;
+        width: 100%;
+        min-width: 0;
+        max-width: none;
+        min-height: 58px;
+        padding-left: 10px;
     }
 
     .journey-project::before {
-        height: 54px;
+        height: 58px;
     }
 
     .journey-project h3 {
-        font-size: 18px;
+        font-size: 23px;
         line-height: 1.02;
     }
 
     .journey-project .type {
-        font-size: 11px;
+        font-size: 13px;
         margin-top: 3px;
     }
 
     .journey-project .location {
-        font-size: 10px;
+        font-size: 12px;
         margin-top: 3px;
     }
 
     .journey-copy {
-        left: var(--journey-copy-left);
-        width: min(262px, calc(100vw - var(--journey-copy-left) - 10px));
+        position: relative;
+        left: auto;
+        top: auto !important;
+        width: 100%;
+        margin-top: 18px;
+        z-index: 8;
     }
 
     .journey-copy h2 {
-        font-size: 20px;
+        font-size: clamp(26px, 7.2vw, 34px);
         line-height: 1.06;
     }
 
     .journey-copy p {
-        font-size: 10px;
-        line-height: 1.4;
+        font-size: 15px;
+        line-height: 1.52;
+        max-width: none;
     }
 
     body.journey-template footer {
@@ -633,52 +748,49 @@ body.journey-template {
 
 @media (max-width: 430px) {
     body.journey-template {
-        --journey-wheel-size: clamp(480px, 116vw, 540px);
-        --journey-wheel-left: clamp(-462px, -112vw, -408px);
-        --journey-wheel-top: clamp(-330px, -78vw, -286px);
-        --journey-wheel-year-size: clamp(24px, 6.1vw, 31px);
-        --journey-milestone-left: clamp(16px, 5vw, 32px);
-        --journey-brand-size: 48px;
+        --journey-wheel-size: clamp(420px, 110vw, 500px);
+        --journey-wheel-left: clamp(-320px, -92vw, -274px);
+        --journey-wheel-top: clamp(-172px, -50vw, -142px);
+        --journey-wheel-year-size: clamp(22px, 6vw, 28px);
+        --journey-milestone-left: 0px;
+        --journey-brand-size: 56px;
         --journey-year-slot: 0px;
-        --journey-copy-left: 194px;
+        --journey-copy-left: 0px;
     }
 
     .journey-hero {
-        min-height: 540px;
+        min-height: 600px;
     }
 
     .journey-hero-content h1 {
-        font-size: 42px;
+        font-size: clamp(44px, 12.6vw, 56px);
     }
 
-    .journey-projects {
-        max-width: min(238px, calc(100vw - var(--journey-copy-left) - 8px));
-        gap: 6px;
+    .journey-milestone-row {
+        margin-top: clamp(130px, 35vw, 164px);
+        margin-left: auto;
+        width: clamp(212px, 66vw, 280px);
+        gap: 10px;
     }
 
     .journey-project {
-        min-width: 110px;
-        max-width: 156px;
+        min-height: 54px;
     }
 
     .journey-project::before {
-        height: 48px;
+        height: 54px;
     }
 
     .journey-project h3 {
-        font-size: 16px;
-    }
-
-    .journey-copy {
-        width: min(236px, calc(100vw - var(--journey-copy-left) - 8px));
-    }
-
-    .journey-copy h2 {
         font-size: 18px;
     }
 
+    .journey-copy h2 {
+        font-size: clamp(24px, 7vw, 30px);
+    }
+
     .journey-copy p {
-        font-size: 9.5px;
+        font-size: 13px;
     }
 }
 

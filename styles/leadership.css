@@ -171,38 +171,44 @@ body.leadership-template .footer-bottom p {
 /* Leadership page: improve balance at normal desktop (100% zoom) */
 @media (min-width: 941px) and (max-width: 2199px) {
     body.leadership-template {
-        --leadership-gutter: clamp(24px, 7.2vw, 152px);
+        --leadership-gutter: clamp(22px, 6vw, 132px);
     }
 
     .leadership-page-intro {
-        padding-top: clamp(34px, 3.2vw, 56px);
-        padding-bottom: 14px;
+        padding-top: clamp(30px, 2.8vw, 48px);
+        padding-bottom: 10px;
     }
 
     .leadership-page-intro h1 {
-        font-size: clamp(96px, 8.1vw, 172px);
+        font-size: clamp(90px, 7.3vw, 154px);
     }
 
     .leadership-page-intro p {
-        margin-top: 12px;
-        font-size: clamp(30px, 2.2vw, 48px);
-        line-height: 1.06;
+        margin-top: 10px;
+        font-size: clamp(26px, 2vw, 42px);
+        line-height: 1.04;
     }
 
     .leader-section-top {
-        grid-template-columns: minmax(560px, 1fr) minmax(500px, 660px);
-        min-height: clamp(560px, 34vw, 680px);
+        grid-template-columns: minmax(520px, 1fr) minmax(460px, 620px);
+        gap: clamp(18px, 1.8vw, 30px);
+        min-height: clamp(500px, 31vw, 620px);
+    }
+
+    .leader-section-top .leader-content {
+        padding-top: clamp(38px, 2.4vw, 54px);
+        padding-bottom: clamp(20px, 1.6vw, 30px);
     }
 
     .leader-section-bottom {
-        grid-template-columns: minmax(560px, 700px) minmax(540px, 1fr);
-        gap: clamp(28px, 2.6vw, 52px);
+        grid-template-columns: minmax(480px, 620px) minmax(520px, 1fr);
+        gap: clamp(20px, 2vw, 34px);
         align-items: end;
-        min-height: clamp(640px, 40vw, 800px);
+        min-height: clamp(560px, 35vw, 700px);
     }
 
     .leader-section-bottom .leader-content {
-        padding: 70px 0 68px 0;
+        padding: clamp(44px, 2.8vw, 62px) 0 clamp(32px, 2.2vw, 46px) 0;
         align-self: stretch;
         display: flex;
         flex-direction: column;
@@ -210,25 +216,26 @@ body.leadership-template .footer-bottom p {
     }
 
     .leader-content h2 {
-        font-size: clamp(52px, 3vw, 76px);
+        font-size: clamp(46px, 2.6vw, 66px);
     }
 
     .leader-content h3 {
-        font-size: clamp(20px, 1.25vw, 28px);
-        margin-bottom: 20px;
+        font-size: clamp(18px, 1.05vw, 24px);
+        margin: 6px 0 16px;
     }
 
     .leader-content p {
-        font-size: clamp(18px, 1.02vw, 23px);
-        line-height: 1.52;
+        font-size: clamp(16px, 0.88vw, 19px);
+        line-height: 1.48;
         text-align: left;
+        margin-bottom: clamp(16px, 1.2vw, 24px);
     }
 
     .leader-image-milind img {
-        width: min(104%, 650px);
+        width: min(102%, 620px);
         margin-right: 0;
         margin-top: 0;
-        transform: scale(1.01);
+        transform: scale(1);
     }
 
     .leader-image-atharva {
@@ -236,8 +243,8 @@ body.leadership-template .footer-bottom p {
     }
 
     .leader-image-atharva img {
-        width: min(102%, 640px);
-        margin-left: -6px;
+        width: min(104%, 640px);
+        margin-left: -10px;
         margin-top: 0;
         transform: scale(1);
     }
