@@ -15,8 +15,8 @@ body.values-template {
     position: relative;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 54px 0;
-    min-height: 900px;
+    padding: 0 42px 0;
+    min-height: 840px;
 }
 
 .values-hero h1 {
@@ -27,7 +27,7 @@ body.values-template {
     font-weight: 400;
     letter-spacing: -0.02em;
     color: #0d0c15;
-    margin: 24px auto 42px;
+    margin: 24px auto 34px;
     max-width: 1320px;
     text-wrap: balance;
 }
@@ -40,8 +40,8 @@ body.values-template {
     position: relative;
     z-index: 2;
     display: grid;
-    grid-template-columns: minmax(290px, 1fr) minmax(320px, 490px) minmax(290px, 1fr);
-    gap: 34px;
+    grid-template-columns: minmax(300px, 1fr) minmax(330px, 470px) minmax(300px, 1fr);
+    gap: 28px;
     align-items: start;
     margin-top: 0;
 }
@@ -49,12 +49,12 @@ body.values-template {
 .values-column {
     display: flex;
     flex-direction: column;
-    gap: 86px;
-    padding-top: 54px;
+    gap: 72px;
+    padding-top: 34px;
 }
 
 .values-column-right {
-    padding-top: 54px;
+    padding-top: 34px;
 }
 
 .values-column-left .value-card {
@@ -66,7 +66,7 @@ body.values-template {
 }
 
 .value-card {
-    max-width: 430px;
+    max-width: 390px;
 }
 
 .value-card h2 {
@@ -86,18 +86,18 @@ body.values-template {
     line-height: 1.34;
     letter-spacing: -0.006em;
     color: #12121a;
-    max-width: 410px;
+    max-width: 370px;
 }
 
 .values-pole-wrap {
     align-self: end;
     display: flex;
     justify-content: center;
-    margin-bottom: -18px;
+    margin-bottom: -6px;
 }
 
 .values-pole-wrap img {
-    width: min(100%, 470px);
+    width: min(100%, 450px);
     display: block;
     object-fit: contain;
     transform: scaleY(1);
@@ -107,18 +107,19 @@ body.values-template {
 .values-bg-word {
     position: absolute;
     left: 50%;
-    bottom: 96px;
-    transform: translateX(-50%) scaleY(0.94);
+    bottom: -78px;
+    transform: translateX(-50%) scaleY(0.92);
     transform-origin: center bottom;
     z-index: 1;
     font-family: 'Juana', 'The Seasons', serif;
-    font-size: clamp(280px, 32vw, 620px);
+    font-size: clamp(240px, 28vw, 540px);
     font-weight: 400;
     line-height: 0.78;
     letter-spacing: -0.032em;
-    color: #030117;
+    color: #06050f;
     text-transform: uppercase;
     pointer-events: none;
+    opacity: 0.98;
 }
 
 body.values-template footer {
@@ -126,15 +127,15 @@ body.values-template footer {
     background: #f3f3f3;
     position: relative;
     z-index: 5;
-    margin-top: -124px;
+    margin-top: -78px;
     padding-top: 48px;
 }
 
 @media (min-width: 1500px) {
     .values-hero {
         max-width: 1560px;
-        min-height: 860px;
-        padding-inline: 42px;
+        min-height: 820px;
+        padding-inline: 34px;
     }
 
     .values-hero h1 {
@@ -144,18 +145,18 @@ body.values-template footer {
     }
 
     .values-layout {
-        grid-template-columns: minmax(320px, 1fr) minmax(360px, 470px) minmax(320px, 1fr);
-        gap: 48px;
+        grid-template-columns: minmax(320px, 1fr) minmax(350px, 450px) minmax(320px, 1fr);
+        gap: 38px;
     }
 
     .values-column,
     .values-column-right {
-        gap: 92px;
-        padding-top: 44px;
+        gap: 74px;
+        padding-top: 30px;
     }
 
     .value-card {
-        max-width: 470px;
+        max-width: 410px;
     }
 
     .value-card h2 {
@@ -167,12 +168,12 @@ body.values-template footer {
     }
 
     .values-pole-wrap img {
-        width: min(100%, 440px);
+        width: min(100%, 420px);
     }
 
     .values-bg-word {
-        bottom: 84px;
-        font-size: clamp(250px, 25vw, 520px);
+        bottom: -58px;
+        font-size: clamp(230px, 23vw, 480px);
     }
 }
 
@@ -198,8 +199,8 @@ body.values-template .footer-desc {
 
 @media (max-width: 1320px) {
     .values-hero {
-        padding: 0 40px 0;
-        min-height: 900px;
+        padding: 0 30px 0;
+        min-height: 820px;
     }
 
     .values-layout {
@@ -209,12 +210,12 @@ body.values-template .footer-desc {
     }
 
     .values-column {
-        gap: 54px;
-        padding-top: 56px;
+        gap: 48px;
+        padding-top: 34px;
     }
 
     .values-column-right {
-        padding-top: 56px;
+        padding-top: 34px;
     }
 
     .value-card h2 {
@@ -222,7 +223,7 @@ body.values-template .footer-desc {
     }
 
     .values-pole-wrap {
-        margin-bottom: -20px;
+        margin-bottom: -8px;
     }
 
     .values-pole-wrap img {
@@ -269,7 +270,7 @@ body.values-template .footer-desc {
     }
 
     .values-bg-word {
-        bottom: -48px;
+        bottom: -70px;
         font-size: clamp(156px, 28vw, 260px);
     }
 

@@ -20,7 +20,7 @@ body.leadership-template {
 .leadership-page-intro {
     max-width: 1290px;
     margin: 0 auto;
-    padding: 48px 30px 8px;
+    padding: 28px 30px 8px;
 }
 
 .leadership-page-intro h1 {
@@ -57,7 +57,7 @@ body.leadership-template {
     grid-template-columns: minmax(360px, 1fr) minmax(400px, 520px);
     gap: 22px;
     align-items: end;
-    min-height: 360px;
+    min-height: 390px;
 }
 
 .leader-section-bottom {
@@ -65,16 +65,16 @@ body.leadership-template {
     grid-template-columns: minmax(400px, 520px) minmax(360px, 1fr);
     gap: 26px;
     align-items: end;
-    min-height: 420px;
+    min-height: 430px;
     border-bottom: 3px solid #39a945;
 }
 
 .leader-content {
-    padding: 0 0 36px;
+    padding: 0 0 28px;
 }
 
 .leader-section-bottom .leader-content {
-    padding: 0 4px 30px 0;
+    padding: 0 4px 24px 0;
 }
 
 .leader-content h2 {
@@ -118,6 +118,7 @@ body.leadership-template {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
+    overflow: visible;
 }
 
 .leader-image img {
@@ -129,23 +130,25 @@ body.leadership-template {
 }
 
 .leader-image-milind img {
-    width: min(106%, 560px);
-    margin-right: -16px;
-    transform: scale(1.04);
+    width: min(100%, 510px);
+    margin-right: 0;
+    transform: none;
     transform-origin: center bottom;
+    object-position: center top;
 }
 
 .leader-image-atharva img {
-    width: min(110%, 600px);
-    margin-left: -12px;
-    transform: scale(1.04);
+    width: min(100%, 560px);
+    margin-left: 0;
+    transform: none;
     transform-origin: center bottom;
+    object-position: center top;
 }
 
 @media (min-width: 1500px) {
     .leadership-page-intro {
         max-width: 1380px;
-        padding-top: 34px;
+        padding-top: 24px;
     }
 
     .leader-section {
@@ -154,20 +157,20 @@ body.leadership-template {
 
     .leader-section-top {
         grid-template-columns: minmax(440px, 1fr) minmax(360px, 500px);
-        min-height: 320px;
+        min-height: 370px;
     }
 
     .leader-section-bottom {
         grid-template-columns: minmax(360px, 500px) minmax(440px, 1fr);
-        min-height: 360px;
+        min-height: 410px;
     }
 
     .leader-content {
-        padding-bottom: 18px;
+        padding-bottom: 20px;
     }
 
     .leader-section-bottom .leader-content {
-        padding-bottom: 22px;
+        padding-bottom: 18px;
     }
 
     .leader-content p {

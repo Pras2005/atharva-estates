@@ -951,7 +951,7 @@ nav>a:hover,
 
 /* --- Featured Projects --- */
 .featured-projects {
-    padding: 0 0 94px 0;
+    padding: 0 0 70px 0;
     text-align: center;
 }
 
@@ -1063,13 +1063,13 @@ nav>a:hover,
 
 /* --- Stats Section --- */
 .stats-section {
-    padding: 72px 0 88px;
+    padding: 48px 0 72px;
 }
 
 .since-banner {
     position: relative;
     text-align: center;
-    margin-bottom: 84px;
+    margin-bottom: 56px;
 }
 
 .since-banner h1 {
@@ -1108,7 +1108,7 @@ nav>a:hover,
     grid-template-columns: 430px 470px;
     gap: 30px;
     justify-content: center;
-    margin-top: 110px;
+    margin-top: 72px;
     align-items: start;
 }
 
@@ -1492,7 +1492,7 @@ nav>a:hover,
     padding-top: 40px;
     padding-bottom: 56px;
     max-width: 1240px;
-    min-height: calc(100vh - var(--header-overlay-top, 74px) - 12px);
+    min-height: auto;
 }
 
 .re-page-title {
@@ -1744,16 +1744,16 @@ nav>a:hover,
 }
 
 .re-category-block {
-    margin-top: 10px;
+    margin-top: 12px;
     padding-bottom: 34px;
 }
 
 .re-city-panel .re-category-block + .re-category-block {
-    margin-top: 20px;
+    margin-top: 24px;
 }
 
 .re-city-panel .re-category-block:first-child {
-    margin-top: 18px;
+    margin-top: 20px;
 }
 
 .re-banner {
@@ -1792,7 +1792,7 @@ nav>a:hover,
 }
 
 .re-category-content {
-    padding-top: 18px;
+    padding-top: 24px;
 }
 
 .re-category-content h4 {
@@ -4264,11 +4264,11 @@ body.hospitality-template p {
     }
 
     .stats-section {
-        padding-top: 54px;
+        padding-top: 44px;
     }
 
     .since-banner {
-        margin-bottom: 70px;
+        margin-bottom: 56px;
     }
 
     .since-banner h1 {
@@ -4278,7 +4278,7 @@ body.hospitality-template p {
     .stats-content {
         grid-template-columns: 470px 520px;
         gap: 36px;
-        margin-top: 90px;
+        margin-top: 68px;
     }
 
     .stats-text h2 {
@@ -4298,6 +4298,7 @@ body.hospitality-template p {
         max-width: 1380px;
         padding-top: 30px;
         padding-bottom: 44px;
+        min-height: auto;
     }
 
     .re-featured-grid {

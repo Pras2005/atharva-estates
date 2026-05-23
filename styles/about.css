@@ -19,9 +19,9 @@ body.about-template {
 
 .about-head-row {
     display: grid;
-    grid-template-columns: minmax(0, 1fr) 156px;
-    gap: 52px;
-    align-items: end;
+    grid-template-columns: minmax(0, 1fr) 168px;
+    gap: 20px;
+    align-items: start;
 }
 
 .about-head-row h1 {
@@ -47,9 +47,11 @@ body.about-template {
 
 .about-head-logo {
     width: 100%;
-    max-width: 156px;
+    max-width: 168px;
     justify-self: end;
-    margin-bottom: 10px;
+    align-self: center;
+    margin-top: 0;
+    transform: translate(-10px, 22px);
 }
 
 .about-copy {
@@ -111,12 +113,13 @@ body.about-template .footer-bottom p {
     }
 
     .about-head-row {
-        grid-template-columns: minmax(0, 1fr) 168px;
-        gap: 24px;
+        grid-template-columns: minmax(0, 1fr) 150px;
+        gap: 20px;
     }
 
     .about-head-logo {
-        max-width: 168px;
+        max-width: 148px;
+        transform: translate(-6px, 16px);
     }
 }
 
